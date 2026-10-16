@@ -1,0 +1,34 @@
+Bước 1 — Cài thư viện
+
+py -m pip install python-telegram-bot requests curl_cffi pyTelegramBotAPI python-dotenv
+
+py -m pip install opencv-python numpy Pillow
+
+Bước 2 — Tạo Telegram Bot
+
+Vào **@BotFather** → `/newbot` → tạo bot → lấy **BOT TOKEN**.
+
+Vào **@userinfobot** → Start → lấy **Telegram numeric ID**.
+
+Bước 3 — Tạo file `.env`
+
+```env
+TELEGRAM_BOT_TOKEN=TOKEN_CUA_BAN
+TELEGRAM_USER_ID=ID_CUA_BAN
+```
+
+Bước 4 — Tạo `accounts.txt`
+
+Mỗi Instagram username một dòng:
+
+```text
+nickykhanhngoc
+lienchinguyen
+jenni.vo.page
+```
+
+Bước 5 — Chạy bot
+
+```powershell
+py .\bot.py
+```
